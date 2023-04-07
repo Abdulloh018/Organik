@@ -1,0 +1,58 @@
+.hero {
+  background-image: url(../../img/another/hero.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+    @media only screen and (max-width: $break_md) {
+      background-position: 0 50%;
+    }
+    // @media only screen and (max-width: $break_sm) {
+    //   background: none;
+    //   background-color: #e9e7e8;
+    // }
+
+  &__inner {
+    width: 49.6rem;
+    padding: 22rem 0 24rem;
+    gap: 1rem;
+
+    @media only screen and (max-width: $break_md) {
+      padding: 14rem 0;
+    }
+
+    @media only screen and (max-width: $break_md) {
+      padding: 10rem 0;
+    }
+    @media only screen and (max-width: $break_sm) {
+      max-width: 38.6rem;
+      padding: 5rem 0;
+    }
+    @media only screen and (max-width: $break_xs) {
+      max-width: 28.6rem;
+      padding: 4rem 0;
+      gap: 0;
+    }
+    @media only screen and (max-width: $break_xxs) {
+      padding: 3rem 0;
+    }
+  }
+
+  &__title {
+    max-width: 49.6rem;
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: $break_sm) {
+      max-width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    @media only screen and (max-width: $break_xs) {
+      margin-top: 0.3rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+}
+

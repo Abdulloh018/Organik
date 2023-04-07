@@ -1,0 +1,163 @@
+.subscribe {
+  padding: 15rem 0;
+
+  @media only screen and (max-width: $break_lg) {
+    padding: 0;
+  }
+
+  &__inner {
+    background-image: url(../../img/another/contactBg.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 3rem;
+    padding: 10rem 8rem 10rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @media only screen and (max-width: $break_lg) {
+      padding: 6rem 0;
+      flex-direction: column;
+      align-items: center;
+
+      & h2 {
+        line-height: 1;
+      }
+    }
+    @media only screen and (max-width: $break_md) {
+      margin: 0 -2rem;
+      border-radius: 0;
+      padding: 6rem 2rem;
+    }
+    @media only screen and (max-width: $break_sm) {
+      padding: 5rem 4rem;
+    }
+    
+    @media only screen and (max-width: $break_xs) {
+      padding: 4rem 3rem;
+      h2 {
+        font-size: 2.8rem;
+      }
+    }
+    @media only screen and (max-width: $break_xxs) {
+      padding: 3rem 2rem;
+    }
+  }
+
+  &__title {
+    max-width: 32rem;
+    width: 100%;
+
+    @media only screen and (max-width: $break_lg) {
+      text-align: center;
+      margin-bottom: 4.6rem;
+    }
+
+    @media only screen and (max-width: $break_xs) {
+      margin-bottom: 3.6rem;
+    }
+  }
+
+  &__contact {
+    display: flex;
+
+    span {
+      background-color: #335B6B;
+    }
+
+    @media only screen and (max-width: $break_md) {
+      width: 100%;
+    }
+    @media only screen and (max-width: $break_sm) {
+      gap: 1rem;
+    }
+
+    @media only screen and (max-width: $break_xxs) {
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    background-color: $color-white;
+    color: $color-primary;
+    padding: 2.5rem 10rem 2.5rem 3rem;
+    margin-right: 1rem;
+    font-size: 1.8rem;
+    border-radius: 1.6rem;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-grey;
+      @media only screen and (max-width: $break_lg) {
+        font-size: 1.8rem;
+      }
+      @media only screen and (max-width: $break_md) {
+        font-size: 1.7rem;
+      }
+      @media only screen and (max-width: $break_sm) {
+        font-size: 1.7rem;
+      }
+      @media only screen and (max-width: $break_xs) {
+        font-size: 1.6rem;
+      } 
+    }
+
+    @media only screen and (max-width: $break_lg) {
+      padding: 1.5rem 6rem 1.5rem 1.5rem;
+      border-radius: 1.2rem;
+    }
+    @media only screen and (max-width: $break_md) {
+      flex: 1 1 70%;
+    }
+    @media only screen and (max-width: $break_sm) {
+      margin-right: 0;
+      padding: 1.5rem 2rem;
+      border-radius: 1rem;
+    }
+
+    @media only screen and (max-width: $break_xs) {
+      padding: 1.2rem 2rem;
+      border-radius: 8px;
+    } 
+
+    @media only screen and (max-width: $break_xxs) {
+      width: 100%;
+    } 
+  }
+
+  .btn-subs {
+    font-size: 2rem;
+    font-weight: 500;
+
+    @media only screen and (max-width: $break_lg) {
+      padding: 1.5rem;
+      border-radius: 1.2rem;
+    }
+    @media only screen and (max-width: $break_md) {
+      flex: 1 1 30%;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    @media only screen and (max-width: $break_sm) {
+      justify-content: center;
+      padding: 1.5rem 0;
+
+      .btn--arrow {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: $break_xs) {
+      padding: .9rem 0;
+      border-radius: .8rem;
+    }
+    @media only screen and (max-width: $break_xxs) {
+      width: 100%;
+    }
+  }
+}
+

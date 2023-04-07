@@ -1,0 +1,264 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  background: white;
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+    position: relative;
+    background: white;  
+    @media only screen and (max-width: $break_lg) {
+      padding: 2rem 0;
+    }
+
+    @media only screen and (max-width: $break_md) {
+      justify-content: space-between;
+      padding: 1.7rem 0;
+    }
+
+    @media only screen and (max-width: $break_xs) {
+      flex-direction: column;
+      justify-content: none;
+      gap: 1rem;
+    }
+    @media only screen and (max-width: $break_xs) {
+
+      padding: 1.5rem 0;
+    }
+  }
+
+  &__logo {
+    a > svg {
+      width: 200px;
+      height: auto;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex: 1 1 auto;
+    margin-left: 10rem;
+
+    @media only screen and (max-width: $break_lg) {
+      margin-left: 4rem;
+    }
+
+    @media only screen and (max-width: $break_md) {
+      display: none;
+    }
+
+    &--item {
+      list-style: none;
+
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+
+      a {
+        font-size: 1.9rem;
+        font-weight: 500;
+        color: $color-primary;
+      }
+
+      a:hover,
+      a:active {
+        color: $color-green;
+      }
+      
+    }
+  }
+
+  
+
+  &__action {
+    cursor: pointer;
+
+    @media only screen and (max-width: $break_md) {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    @media only screen and (max-width: $break_sm) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media only screen and (max-width: $break_xs) {
+      width: 100%;
+    } 
+
+    &--card {
+      display: flex;
+      align-items: center;
+      padding: 6px 23px 6px 10px;
+      gap: 10px;
+      border: 1px solid #D4D4D4;
+      border-radius: 100px;
+
+      @media only screen and (max-width: $break_md) {
+      padding: 6px 18px 6px 8px;
+      }
+    }
+
+    &--icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $color-primary;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+
+      svg {
+        width: 26px;
+        color: #fff;
+      }
+
+      @media only screen and (max-width: $break_md) {
+        width: 45px;
+        height: 45px;
+  
+        svg {
+          width: 20px;
+          color: #fff;
+        }
+      }
+      
+    }
+
+    &--text {
+      color: $color-primary;
+      font-size: 1.7rem;
+    }
+    &--number  {
+      color: $color-primary;
+      font-size: 1.7rem;
+    }
+  }
+  
+  &--block {
+    display: none;
+
+    @media only screen and (max-width: $break_md) {
+      display: flex; // or display block
+    }
+  }
+
+  &__navigation-checkbox {
+    display: none;
+  }
+
+  &__navigation-button {
+    @media only screen and (max-width: $break_md) {
+      display: inline-block;
+      background-color: $color-green;
+      height: 5rem;
+      width: 5rem;
+      border-radius: 1rem;
+      box-shadow: 0 1rem 3rem rgba($color-black, .1);
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      transition: .3s;
+    }
+  }
+
+
+  &__navigation-icon {
+    @media only screen and (max-width: $break_md) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 3px;
+      background-color: $color-white;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s;
+    }
+
+    &::before { top: -.8rem;}
+    &::after { top: .8rem;}
+    }
+  }
+
+  &__navigation-checkbox:checked + &__navigation-button &__navigation-icon {
+    background-color: transparent;
+  }
+  &__navigation-checkbox:checked + &__navigation-button &__navigation-icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  &__navigation-checkbox:checked + &__navigation-button &__navigation-icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  &__navigation-checkbox:checked + &__navigation-button {
+    background-color: $color-primary;
+  }
+
+  
+  &__navigation-checkbox:checked ~ .mobile-menu {
+    padding: 5px 20px 20px;
+    height: max-content;
+    overflow: visible;
+  }
+  &__navigation-checkbox:checked ~ .mobile-menu  .mobile-menu__item{
+    margin-top: 15px ;
+  }
+
+  .mobile-menu {
+    display: none;
+    height: 0;
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    right: -20px;
+    padding: 5px 20px 20px;
+    background-color: #eff6f1;
+    z-index: -1;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: all .3s;
+    overflow: hidden;
+
+    @media only screen and (max-width: $break_md) {
+      display: block;
+    }
+
+    &__item {
+      list-style: none;
+      margin-top: 5px;
+      transition: all .3s;
+
+      a {
+        width: 100%;
+        font-size: 1.9rem;
+        font-weight: 400;
+        color: $color-primary;
+        transition: all .1s;
+      }
+
+      a:hover,
+      a:active {
+        color: $color-green;
+      }
+   }
+  }
+}

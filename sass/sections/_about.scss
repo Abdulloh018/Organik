@@ -1,0 +1,183 @@
+.about {
+  background-color: #F9F8F8;
+  padding: 13rem 0 15rem 0;
+
+  @media only screen and (max-width: $break_lg) {
+    padding: 6rem 0 8rem 0;
+  }
+
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+
+    @media only screen and (max-width: $break_lg) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__left {
+    text-align: center;
+    padding: 4.7rem 0;
+
+    @media only screen and (max-width: $break_lg) {
+      padding: 0;
+    }
+
+    img {
+      width: 100%;
+
+      @media only screen and (max-width: $break_lg) {
+        width: 70%;
+      }
+      @media only screen and (max-width: $break_sm) {
+        width: 90%;
+      }
+      @media only screen and (max-width: $break_xxs) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__right {
+
+    @media only screen and (max-width: $break_lg) {
+      & h3 {
+        text-align: center;
+      }
+      & h2 {
+        text-align: center;
+      }
+    }
+  }
+
+  &__heading {
+    max-width: 52.1rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: $break_lg) {
+      margin: 1rem auto 2rem;
+    }
+    @media only screen and (max-width: $break_xs) {
+      margin: 0 auto 1.5rem;
+    }
+  }
+
+  &__text {
+    font-family: $font-opensans;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    color: $color-grey;
+
+    @media only screen and (max-width: $break_lg) {
+      text-align: center;
+    }
+
+    @media only screen and (max-width: $break_md) {
+      font-size: 1.7rem;
+    }
+    @media only screen and (max-width: $break_sm) {
+      font-size: 1.6rem;
+      line-height: 1.6;
+    }
+    @media only screen and (max-width: $break_xs) {
+      line-height: 1.4;
+    }
+  }
+
+  &__details{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 5.6rem;
+
+    @media only screen and (max-width: $break_lg) {
+      flex-direction: row;
+      margin-top: 4.6rem;
+      gap: 3rem;
+    }
+    @media only screen and (max-width: $break_sm) {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3.6rem;
+      gap: 2.5rem;
+    }
+    @media only screen and (max-width: $break_xxs) {
+      margin-top: 2.4rem;
+      gap: 1.8rem;
+    }
+
+    &-content {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+
+      @media only screen and (max-width: $break_lg) {
+        flex-direction: column;
+        border-radius: 20px;
+        text-align: center;
+        background: white;  
+        padding: 2rem;
+        gap: 1rem;
+      }
+
+      @media only screen and (max-width: $break_sm) {
+        width: 80%;
+      }
+      @media only screen and (max-width: $break_xs) {
+        gap: 0;
+        width: 100%;
+        border-radius: 1.6rem;
+      }
+      @media only screen and (max-width: $break_xxs) {
+        border-radius: 1.2rem;
+      }
+    }
+
+
+    &-text {
+      flex: 1 1;
+    }
+
+    &-pharagraph {
+      @include pharagraph;
+      margin-top: .9rem;
+
+      @media only screen and (max-width: $break_md) {
+        font-size: 1.7rem;
+      }
+      @media only screen and (max-width: $break_sm) {
+        font-size: 1.6rem;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  &__details-picture {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+
+  &__btn {
+    margin-top: 5rem;
+    span {
+      background-color: #335B6B;
+    }
+
+    @media only screen and (max-width: $break_lg) {
+      display: flex;
+      justify-content: center;
+    }
+    @media only screen and (max-width: $break_xxs) {
+      margin-top: 2.4rem;
+    }
+  }
+}

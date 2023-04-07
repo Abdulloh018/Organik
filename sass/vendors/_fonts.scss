@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/opensans/ExtraBold.woff2') format('woff2'),
+      url('../../fonts/opensans/ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/opensans/BoldItalic.woff2') format('woff2'),
+      url('../../fonts/opensans/BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/opensans/Bold.woff2') format('woff2'),
+      url('../../fonts/opensans/Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/opensans/Italic.woff2') format('woff2'),
+      url('../../fonts/opensans/Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/opensans/ExtraBoldItalic.woff2') format('woff2'),
+      url('../../fonts/opensans/ExtraBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/opensans/Light.woff2') format('woff2'),
+      url('../../fonts/opensans/Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/opensans/LightItalic.woff2') format('woff2'),
+      url('../../fonts/opensans/LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/opensans/Medium.woff2') format('woff2'),
+      url('../../fonts/opensans/Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/opensans/Regular.woff2') format('woff2'),
+      url('../../fonts/opensans/Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/opensans/MediumItalic.woff2') format('woff2'),
+      url('../../fonts/opensans/MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/opensans/SemiBold.woff2') format('woff2'),
+      url('../../fonts/opensans/SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/opensans/SemiBoldItalic.woff2') format('woff2'),
+      url('../../fonts/opensans/SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/roboto/Black.woff2') format('woff2'),
+      url('../../fonts/roboto/Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/roboto/Bold.woff2') format('woff2'),
+      url('../../fonts/roboto/Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/roboto/BlackItalic.woff2') format('woff2'),
+      url('../../fonts/roboto/BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/roboto/BoldItalic.woff2') format('woff2'),
+      url('../../fonts/roboto/BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/roboto/Italic.woff2') format('woff2'),
+      url('../../fonts/roboto/Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/roboto/LightItalic.woff2') format('woff2'),
+      url('../../fonts/roboto/LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/roboto/Light.woff2') format('woff2'),
+      url('../../fonts/roboto/Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/roboto/Medium.woff2') format('woff2'),
+      url('../../fonts/roboto/Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/roboto/MediumItalic.woff2') format('woff2'),
+      url('../../fonts/roboto/MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/roboto/Regular.woff2') format('woff2'),
+      url('../../fonts/roboto/Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/roboto/Thin.woff2') format('woff2'),
+      url('../../fonts/roboto/Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Yellowtail';
+  src: url('../../fonts/yellowtail/Regular.woff2') format('woff2'),
+      url('../../fonts/yellowtail/Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/roboto/ThinItalic.woff2') format('woff2'),
+      url('../../fonts/roboto/ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+

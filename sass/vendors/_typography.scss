@@ -1,0 +1,224 @@
+.heading-1 {
+  font-family: $font-roboto;
+  font-size: 7rem;
+  font-weight: 700;
+  color: $color-primary;
+  letter-spacing: 0.36px;
+
+  @media only screen and (max-width: $break_lg) {
+    font-size: 6.5rem;
+  }
+  @media only screen and (max-width: $break_sm) {
+    font-size: 4.5rem;
+  }
+  @media only screen and (max-width: $break_xs) {
+    font-size: 4rem;
+  }
+  @media only screen and (max-width: $break_xxs) {
+    font-size: 3.6rem;
+  }
+}
+
+.heading-2 {
+  color: $color-primary;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+
+  &--white {
+    color: $color-white;
+  }
+
+  @media only screen and (max-width: $break_md) {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+  @media only screen and (max-width: $break_sm) {
+    font-size: 3.2rem;
+  }
+}
+
+.heading-3 {
+  font-size: 3.6rem;
+  font-weight: 400;
+  font-family: $font-yellowtail;
+  color: $color-green;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+
+  &--white {
+    color: $color-white;
+  }
+
+  @media only screen and (max-width: $break_sm) {
+    font-size: 3.3rem;
+  }
+  @media only screen and (max-width: $break_xs) {
+    font-size: 3rem;
+  }
+  @media only screen and (max-width: $break_xxs) {
+    font-size: 2.8rem;
+  }
+}
+
+.heading-4 {
+  color: $color-primary;
+  font-size: 2.5rem;
+  line-height: 1.4;
+
+  @media only screen and (max-width: $break_xs) {
+    font-size: 2.2rem;
+  }
+}
+
+.heading-5 {
+  font-family: $font-roboto;
+  color: $color-primary;
+  font-size: 2.6rem;
+  font-weight: 700;
+
+  @media only screen and (max-width: $break_sm) {
+    font-size: 2.4rem;
+  }
+}
+
+
+.btn {
+  &:link,
+  &:visited {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    gap: 2rem;
+    padding: 2.3rem 0.9rem 2.3rem 3.3rem;
+    border-radius: 1.6rem;
+    border: none;
+    font-size: 1.9rem;
+    font-weight: 600;
+    transition: all .2s;
+
+    @media only screen and (max-width: $break_sm) {
+      gap: 1.5rem;
+      padding: 1.5rem 0.7rem 1.5rem 2.5rem;
+      font-size: 1.7rem;
+    }
+    @media only screen and (max-width: $break_xs) {
+      gap: 1.5rem;
+      padding: 1.2rem 0.7rem 1.2rem 2rem;
+      font-size: 1.7rem;
+      border-radius: 8px;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 1rem 2rem rgba($color-black,.2);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active{
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+  }
+
+  &--yellow {
+    border: 1px solid $color-yellow !important;
+    background-color: $color-yellow;
+    color: $color-primary;
+
+    &:hover {
+      border: 1px solid $color-yellow !important;
+      background-color: $color-white;
+    }
+  }
+  &--darkblue {
+    border: 1px solid $color-primary !important;
+    background-color: $color-primary;
+    color: $color-white;
+
+    &:hover {
+      border: 1px solid $color-primary !important;
+      background-color: $color-white;
+      color: $color-primary;
+    }
+  }
+  &--white {
+    border: 1px solid $color-primary !important;
+    background-color: $color-white;
+    color: $color-primary;
+
+    &:hover {
+      border: 1px solid $color-primary !important;
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+}
+
+.btn--arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-primary;
+  border-radius: 50%;
+  padding: .8rem;
+  
+  svg {
+    width: 1.2rem;
+  }
+}
+
+.btn-view {
+  display: flex;
+  align-items: center;
+  transition: all .2s;
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-left: 1rem;
+
+    svg {
+      width: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: $break_lg) {
+    background-color: $color-primary;
+    color: #fff;
+    width: max-content;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    span {
+      svg {
+        width: 1.5rem;
+      }
+    }
+  }
+  @media only screen and (max-width: $break_sm) {
+
+    span {
+      margin-left: 0;
+    }
+  }
+}
+
+.btn-view:hover {
+  transform: translateY(-3px);
+}
+
+.btn-view:active {
+  transform: translateY(-1px);
+}
